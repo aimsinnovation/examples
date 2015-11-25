@@ -1,0 +1,16 @@
+﻿<Window x:Class="AIMS.ApiExample.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIMS.ApiExample"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        Background="LightGray"
+        Closed="OnClosed"
+        Title="Login" Height="400" Width="500">
+    <Grid>
+        <TextBlock Foreground="DimGray" FontSize="30" TextAlignment="Center" VerticalAlignment="Center">Loading...</TextBlock>
+        <WebBrowser x:Name="Browser" Navigated="OnNavigated" Navigating="OnNavigating"></WebBrowser>
+    </Grid>
+</Window>
